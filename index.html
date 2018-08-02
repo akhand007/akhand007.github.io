@@ -18,6 +18,7 @@
         background-size: cover;
         position: relative;
         background-repeat: no-repeat;
+        /*        8543149591*/
     }
 
     /*
@@ -66,11 +67,11 @@
 <body>
 
     <h2 class="text-center"><span>Lakdi Lagi🤣😂</span></h2>
-    <div class="" style="padding: 3%">
+    <div class="" style="padding: 3%;">
 
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="background-color: white;margin-bottom: 100px">
             <br />
-            <form method="post" id="insert_form">
+            <form>
                 <div class="table-repsonsive" style="opacity: 1;background: white">
                     <span id="error"></span>
                     <table class="table table-bordered" id="item_table">
@@ -83,7 +84,13 @@
                             <th><button type="button" name="add" class="btn btn-success btn-sm add"><span class="glyphicon glyphicon-plus"></span></button></th>
                         </tr>
                     </table>
+
+
                     <div align="center">
+
+                        <button type="button" name="add" class="btn btn-success add">
+                           Add Row
+                        </button>
                         <button type="button" name="submit" class="btn btn-danger player" value="Insert" id="result">Result</button>
 
                     </div>
@@ -101,6 +108,7 @@
             <div id="columnchart_material" class=" col-md-offset-4 col-xs-offset-3 col-sm-offset-3 col-md-4 col-xs-6 col-sm-6 hidden" style="width: 400px; height: 300px;padding-top: 28px;padding-bottom: 30px"></div>
             <br>
         </div>
+
     </div>
 
     <!--    <div id="donutchart" style="width: 900px; height: 500px;"></div>-->
@@ -264,6 +272,16 @@
         });
 
         function edit(i) {
+            var obj = document.createElement("audio");
+            obj.src = "shot.mp3";
+            obj.volume = 0.8;
+            obj.autoPlay = false;
+            obj.preLoad = true;
+            obj.controls = true;
+
+            obj.play();
+            // obj.pause();
+
             $("#first_name" + i).removeAttr('disabled');
             $("#second_name" + i).removeAttr('disabled');
             $("#third_name" + i).removeAttr('disabled');
