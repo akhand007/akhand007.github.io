@@ -63,11 +63,12 @@
     .player {
         font: 18px Helvetica, Sans-Serif;
     }
+
 </style>
 
 <body>
 
-    <h2 class="text-center"><span>Lakdi Lagi 😆😂</span></h2>
+    <h2 class="text-center"><span>Lakdi Lagi😆😂</span></h2>
     <div class="" style="padding: 3%;">
 
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="background-color: white;margin-bottom: 100px">
@@ -296,16 +297,23 @@
                 var x = document.getElementById("first_name" + i);
                 x.style.color = 'white';
                 x.style.backgroundColor = '#ed1c24';
+            } else {
+                var x = document.getElementById("first_name" + i);
+                x.style.color = 'black';
+                x.style.backgroundColor = 'white';
             }
 
         }
 
         function myFunctionY(inputValue, i) {
             if (inputValue < 0) {
-                console.log("y ", i);
                 var y = document.getElementById("second_name" + i);
                 y.style.color = 'white';
                 y.style.backgroundColor = '#ed1c24';
+            } else {
+                var y = document.getElementById("second_name" + i);
+                y.style.color = 'black';
+                y.style.backgroundColor = 'white';
             }
         }
 
@@ -314,6 +322,10 @@
                 var z = document.getElementById("third_name" + i);
                 z.style.color = 'white';
                 z.style.backgroundColor = '#ed1c24';
+            } else {
+                var z = document.getElementById("third_name" + i);
+                z.style.color = 'black';
+                z.style.backgroundColor = 'white';
             }
         }
 
@@ -322,6 +334,10 @@
                 var w = document.getElementById("forth_name" + i);
                 w.style.color = 'white';
                 w.style.backgroundColor = '#ed1c24';
+            } else {
+                var w = document.getElementById("forth_name" + i);
+                w.style.color = 'black';
+                w.style.backgroundColor = 'white';
             }
         }
 
@@ -342,6 +358,7 @@
         window.addEventListener("beforeunload", function(event) {
             event.returnValue = "Your custom message.";
         });
+
     </script>
 
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -350,6 +367,7 @@
         google.charts.load('current', {
             'packages': ['bar']
         });
+
     </script>
 
 
