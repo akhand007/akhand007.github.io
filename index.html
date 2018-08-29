@@ -64,6 +64,33 @@
         font: 18px Helvetica, Sans-Serif;
     }
 
+    .table-fixed{
+  width: 100%;
+  background-color: #f3f3f3;
+  tbody{
+    height:200px;
+    overflow-y:auto;
+    width: 100%;
+    }
+  thead,tbody,tr,td,th{
+    display:block;
+  }
+  tbody{
+    td{
+      float:left;
+    }
+  }
+  thead {
+    tr{
+      th{
+        float:left;
+       background-color: #f39c12;
+       border-color:#e67e22;
+      }
+    }
+  }
+}
+    
 </style>
 
 <body>
@@ -76,7 +103,7 @@
             <form>
                 <div class="table-repsonsive" style="opacity: 1;background: white">
                     <span id="error"></span>
-                    <table class="table table-bordered" id="item_table">
+                    <table class="table table-bordered table table-fixed" id="item_table">
                         <tr class="bg-primary">
                             <th style="position: fixed;">#</th>
                             <td style="position: fixed;"><input type="text" name="playerOne" id="playerOne" placeholder="Player One" class="form-control player" /></td>
